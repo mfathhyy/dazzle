@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+#page{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav{
+
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    left: 7%; 
+    z-index: 100;   
+}
+
+.nav .header{
+    color:white;
+}
+
+.nav .tabs a {
+    text-decoration: none;
+    color: gray;
+    transition: all 1s;
+}
+
+
+.nav .tabs .active a{
+    color:white
+}
+
+.nav .tabs a:hover{
+    color:rgb(6, 187, 6);
+}
+
+
+
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+
+
+
+.image{
+    position: relative;
+    top: 100px;
+    right: 3%;
+}
+
+.side{
+    background-color: transparent;
+    position: absolute;
+    right:0;
+    top: 30%;
+    bottom: 0;
+    
+
+}
+
+.side .icons i{
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.side .icons i:hover{
+
+    color:rgb(6, 187, 6);
+}
+
+.side::before{
+
+    content: "";
+    width: 3px;
+    height:50px;
+    background-color: gray;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+ 
+.side p{
+    
+    transform:rotate(90deg)
+ }
+
+ .side .scroll{
+
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+ }
+
+
+ .side .scroll:hover{
+    color: rgb(6, 187, 6);
+ }
+
+
+
+
